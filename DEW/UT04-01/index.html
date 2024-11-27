@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="" method="post">
         <fieldset>
             <legend>Datos Usuario</legend>
+
             <label for="UserName">Nombre de Usuario</label>
             <input type="text" id="UserName" placeholder="UserName">
+
             <label for="contrasena">Contraseña</label>
-            <input type="text" id="contrasena" placeholder="Introduce Contraseña">
+            <input type="password" id="contrasena" placeholder="Introduce Contraseña">
             <input type="checkbox" id="mostrarContr"><label for="mostrarContr">Mostrar Contraseña</label>
+
         </fieldset>
         <fieldset>
             <legend>Datos Personales</legend>
+
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" placeholder="Nombre">
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" placeholder="Apellidos">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Ejem:(+34)922123123">
+
+            <label for="codPostal">Código Postal</label>
+            <input type="number" id="codPostal" placeholder="38XXX">
+
+            <label for="dninie">DNI / NIE</label>
+            <select name="selectdninie" id="selectdninie">
+                <option value="dni">DNI</option>
+                <option value="nie">NIE</option>
+            </select>
+            <input type="text" id="dninie" placeholder="DNI / NIE">
+
+            <label for="tipoCuenta">Crear cuenta como:</label>
+            <input type="radio" name="tipoCuenta" id="Particular" value="Particular">
+            <label for="Particular">Particular</label>
+            <input type="radio" name="tipoCuenta" id="Empresa" value="Empresa">
+            <label for="Empresa">Empresa</label>
+
+            <label for="nacimiento">Año de Nacimiento</label>
+            <select name="nacimiento" id="nacimiento">
+                <option value="2010" selected>2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+            </select>
+
+            <label for="aficiones">Elije tus aficiones:</label>
+            <input type="checkbox" name="aficiones" id="musica" value="musica">
+            <label for="musica">Música</label>
+            <input type="checkbox" name="aficiones" id="deporte" value="deporte">
+            <label for="deporte">Deporte</label>
+            <input type="checkbox" name="aficiones" id="videojuegos" value="videojuegos">
+            <label for="videojuegos">Video Juegos</label>
+            <input type="checkbox" name="aficiones" id="manualidades" value="manualidades">
+            <label for="manualidades">Manualidades</label>
+            <input type="checkbox" name="aficiones" id="artes" value="artes">
+            <label for="artes">Artes</label>
+            <input type="checkbox" name="aficiones" id="lectura" value="lectura">
+            <label for="lectura">Lectura</label>
+
         </fieldset>
         <fieldset>
             <legend>Datos Publicación</legend>
+
             <label for="titulo">Título</label>
             <input type="text" id="titulo" placeholder="Título">
-            <label for="titulo">Descripción</label>
-            <input type="textbox" id="titulo">
+
+            <label for="Descripcion">Descripción</label>
+            <textarea name="Descripcion" id="Descripcion"></textarea>
+
         </fieldset>
     </form>
 </body>
+
 </html>
